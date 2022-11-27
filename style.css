@@ -1,0 +1,60 @@
+
+html {
+    color: red;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    display:grid;
+    grid-auto-rows: 50px;
+    grid-gap: 10px;
+    grid-template-rows: 520px repeat(2, 400px) 300px 100px;
+    background-color: blue;
+}
+
+
+
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.content:nth-child(1) {
+    justify-content: space-between;
+}
+
+.content .top-header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+    margin: 0px 15px;
+}
+
+.content:nth-child(2) {
+    
+}
+
+.content:nth-child(3) {
+    
+}
+
+.content:nth-child(4) {
+    
+}
+
+.content:nth-child(5) {
+    
+}
+
+
+a {
+    text-decoration: none;
+}
