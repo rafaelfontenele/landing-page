@@ -1,48 +1,153 @@
-
-html {
-    color: red;
-}
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400px;
     display:grid;
-    grid-auto-rows: 50px;
-    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
     grid-template-rows: 520px repeat(2, 400px) 300px 100px;
-    background-color: blue;
 }
-
-
 
 
 .content {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: black;
-
 }
 
 .content:nth-child(1) {
     justify-content: space-between;
+    background-color: #1F2937;
 }
 
-.content .top-header {
-    display: flex;
+.content .top-header,
+.content .bottom-header {
+    display: inherit;
+    flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding: 15px;
-    margin: 0px 15px;
+    height: auto;
+    margin-left: -70px;
+}
+.content .top-header {
+    padding-top: 20px;
+}
+
+.content .bottom-header {
+    padding-bottom: 160px;
+    padding-top: 60px;
+    margin-left: -90px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: auto;
+}
+.bottom-header .left .box{
+    margin-top: 40px;
+    margin-left: 200px;
+    margin: 40px 0px 0px 200px;
+    width: 60%;
+    padding: 0px;
+    gap: 8px;
+    color: #E5E7EB    ;
+    font-size: 18px;
+}
+
+.bottom-header .right .box{
+    width: 550px;
+    height: 250px;
+    margin-top: 20px;
+    margin-right: 70px;
+    padding: 0;
+}
+
+.box h1 {
+    font-size: 48px;
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 920;
+    color: #F9FAF8;
+
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    height: 36px;
+    outline: 0;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    width: 40px;
+    padding-left: 60px;
+}
+
+.logo:hover,
+a:hover {
+    transform: scale(1.4);
+}
+
+a:hover {
+    transform: scale(1.15);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-left: 190px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .content:nth-child(2) {
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -50px;
+}
+
+.content:nth-child(2) .row {
+    display:flex;
+    flex-direction: row;
+    gap: 70px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.content:nth-child(2) .box {
+    gap: 30px;
     
 }
 
+.box-image {
+    width: 200px;
+    height: 100px;
+    background-image: url('http://visitwabashcounty.com/wp-content/uploads/6056710418_03fda4569b_z-150x150.jpg');
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 8px 8px #fff inset;
+}
+
 .content:nth-child(3) {
+    background-color: #1F2937;
     
 }
 
@@ -51,10 +156,7 @@ body{
 }
 
 .content:nth-child(5) {
+    background-color: #1F2937;
+
     
-}
-
-
-a {
-    text-decoration: none;
 }
