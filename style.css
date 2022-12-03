@@ -5,7 +5,7 @@ body{
     display:grid;
     margin: 0;
     padding: 0;
-    grid-template-rows: 520px repeat(2, 400px) 300px 100px;
+    grid-template-rows: 520px 400px 500px 300px 100px 20px;
 }
 
 
@@ -74,7 +74,7 @@ body{
 
 }
 
-button {
+.btn-signup {
     background-color: #3882F6;
     border-radius: 8px;
     color: white;
@@ -130,33 +130,85 @@ a {
     gap: 70px;
     text-align: center;
     margin-top: -50px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
 }
 
 .content:nth-child(2) .box {
     gap: 30px;
+    font-size: 20px;
+    font-weight: 400;
     
 }
 
 .box-image {
-    width: 200px;
-    height: 100px;
-    background-image: url('http://visitwabashcounty.com/wp-content/uploads/6056710418_03fda4569b_z-150x150.jpg');
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 0 8px 8px #fff inset;
+    width: 150px;
+    height: 150px;
 }
 
 .content:nth-child(3) {
     background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    color: white;
     
 }
+.content:nth-child(3) .box {
+    width:800px;
+    line-height: 50px;
+    font-weight: 200px;
+    font-size: 32px;
+    font-style: italic;
+    margin-left: 50px;
+}
+
+.signature {
+    display: flex;
+    align-self: flex-end;
+    margin: 25px 70px 0 0;  
+}
+
 
 .content:nth-child(4) {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+}
+
+.call-to-action-wrapper {
+    background: #3882F6;
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.call-to-action-wrapper .text {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.content:nth-child(4) button {
+    align-self: center;
+    border-color: rgb(255, 252, 252);
+    border-style:solid;
+    border-width: 2px;
+    width: 160px;
 }
 
 .content:nth-child(5) {
     background-color: #1F2937;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #F9FAF8
     
 }
