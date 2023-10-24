@@ -4,7 +4,7 @@
 This is the first project for the html/css course from (The Odin Project).
 
 LIVE: 
-https://etzoider.github.io/landing-page/
+https://rafaelfontenele.github.io/landing-page/
 
 
 
